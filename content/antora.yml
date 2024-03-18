@@ -1,13 +1,13 @@
 ---
 name: modules
-title: Sample Module Title
+title: "LB1495: Retail On The Edge: AI/ML And Application Services"
 version: master
 nav:
   - modules/ROOT/nav.adoc
 
 asciidoc:
   attributes:
-    lab_name: "I'm the lab_name var"
+    lab_name: "Retail On The Edge: AI/ML And Application Services"
     release-version: master
     page-pagination: true
     my_var: "foo"
@@ -15,6 +15,17 @@ asciidoc:
     ssh_user: devops
     ssh_password: devops
     ssh_command: ssh devops@bastion.{guid}.example.opentlc.com
+    minio-user: minio
+    minio-pass: minio123
+    minio-endpoint: http://minio-service:9000
+    git-clone-repo-url: https://github.com/brunoNetId/redbag-ai.git
+    git-clone-repo-branch: main
+    user: userX
+    password: openshift
+    openshift_cluster_ingress_domain: cluster-p6g59.sandbox2568.opentlc.com
+    openshift_console_url: https://console-openshift-console.apps.{openshift_cluster_ingress_domain}/
+    rhoai_dashboard_url: https://rhods-dashboard-redhat-ods-applications.{openshift_cluster_ingress_domain}/
+    login_command: oc login --insecure-skip-tls-verify=false -u userX -p openshift https://api.{openshift_cluster_ingress_domain}:6443"    
     page-links:
     - url: https://redhat.com
       text: Red Hat
