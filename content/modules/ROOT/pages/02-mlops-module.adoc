@@ -1,0 +1,51 @@
+= MLOps -- Building and Deploying the Image Detection Model
+
+== Overview
+As the Introduction stated, in this lab each user will be able to build out and operationalize an AI/ML detection model.  The focus is on the experience working with OpenShift AI and the OpenShift Application Platform where it runs.
+
+Each user will perform the following tasks:
+
+* Log into OpenShift Console and view their existing mlops project
+* Login to OpenShift AI from from the OpenShift Console
+* Open the users prebuilt OpenShift AI Data Science Project shell
+* Complete the configuration and setup of the Data Science Project
+* Create and Open the AI Workbench
+* Load and review the Jupyter notebooks for image detection model creation
+* Design an Elyra pipeline
+* Create an OpenShift Pipeline
+* Run the AI/ML OpenShift Pipeline
+* Operationalize the created/deployed model by calling it from the Edge based shopping application
+
+From a high-level view each user will have all their required services available in their own unique OpenShift project. This is to support the limitations inherent in a lab environment.  
+
+[.bordershadow]
+image::01/lab1-layout.png[width=100%]
+
+In an actual enteprise development and deployement environment the actual services would be spread out onto different OpenShift environments, which may include cloud based, data center based, single node OpenShift installations, and edge device based MicroShift installations.
+
+== Environment information
+For the purposes of this Lab, we have provisioned a single OpenShift cluster, with OpenShift AI deployed on it, along with all the Application Services Operators and running instances required to complete the modules.
+
+Each person attending this lab will have a unique user account in which to do their work.
+
+If you are using the customized version of the instructions, the information below will render properly. If not, you will see placeholder values instead.
+
+* Your account id: `{user}`
+* Your password: `{password}`
+
+In a new window or tab, open the following URL and log into OpenShift:
+
+* The Red Hat OpenShift Console login page:
+** https://console-openshift-console.apps.{openshift_cluster_ingress_domain}/[https://console-openshift-console.apps.{openshift_cluster_ingress_domain}/]
+
+* Enter your credentials as detailed above (as detailed above)
+
+[.bordershadow]
+image::01/ocp-login.png[width=75%]
+
+* After you authenticate, you should be taken into your {user}-mlops project, and the result should look like:
+
+[.bordershadow]
+image::01/ocp-initial-userproject.png[width=100%]
+
+
