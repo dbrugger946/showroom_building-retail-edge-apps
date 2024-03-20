@@ -1,4 +1,4 @@
-= MLOps -- Building and Deploying the Image Detection Model
+= MLOps - Lab Overview, Environment, and Logins
 
 == Overview
 As the Introduction stated, in this lab each user will be able to build out and operationalize an AI/ML detection model.  The focus is on the experience working with OpenShift AI and the OpenShift Application Platform where it runs.
@@ -19,7 +19,7 @@ Each user will perform the following tasks:
 From a high-level view each user will have all their required services available in their own unique OpenShift project. This is to support the limitations inherent in a lab environment.  
 
 [.bordershadow]
-image::01/lab1-layout.png[width=100%]
+image::01-02/lab1-layout.png[width=100%]
 
 In an actual enteprise development and deployement environment the actual services would be spread out onto different OpenShift environments, which may include cloud based, data center based, single node OpenShift installations, and edge device based MicroShift installations.
 
@@ -33,6 +33,7 @@ If you are using the customized version of the instructions, the information bel
 * Your account id: `{user}`
 * Your password: `{password}`
 
+=== Log into the OpenShift Console
 In a new window or tab, open the following URL and log into OpenShift:
 
 * The Red Hat OpenShift Console login page:
@@ -41,11 +42,37 @@ In a new window or tab, open the following URL and log into OpenShift:
 * Enter your credentials as detailed above (as detailed above)
 
 [.bordershadow]
-image::01/ocp-login.png[width=75%]
+image::01-02/ocp-login.png[width=75%]
 
 * After you authenticate, you should be taken into your {user}-mlops project, and the result should look like:
 
 [.bordershadow]
-image::01/ocp-initial-userproject.png[width=100%]
+image::01-02/ocp-initial-userproject2.png[width=75%]
+
+=== Log into OpenShift AI
+On the upper Right of the OpenShift Console screen click on the grid menu icon and from there click on the Red Hat OpenShift AI menu option
+
+[.bordershadow]
+image::01-02/OCP-AI-Menu-option.png[width=50%]
+
+* The first time you log into OpenShift AI you will see a login splash screen, click on the login button and fill out your user login information.
+
+** Your account id: `{user}`
+** Your password: `{password}`
+
+[.bordershadow]
+image::01-02/LoginSplashScreen.png[width=50%]
+
+[.bordershadow]
+image::01-02/OCP-AI-Login.png[width=50%]
+
+* If your login is successful then you should be viewing the main OpenShift AI Console
+
+[.bordershadow]
+image::01-02/OCP-AI-MainView.png[width=50%]
+
+Now we will fill out the Data Science Project what was created for each user.
+
+
 
 
