@@ -36,12 +36,12 @@ IMPORTANT: Your assigned user is {user}. Don't mess that up or things will break
 IMPORTANT: As a reminder, it should **NOT** be `userX` (for you, `X` should be a number instead)
 
 [.bordershadow]
-image::01-03/OCPAI-DataScience-Prjs.png[width=50%]
+image::01-03/OCPAI-DataScience-Prjs.png[width=75%]
 
 * You will now see the contents of your Data Science Project, which you will now finish building.
 
 [.bordershadow]
-image::01-03/OCPAI-DS-Prj-InitialView.png[width=50%]
+image::01-03/OCPAI-DS-Prj-InitialView.png[]
 
 == Create a Data Connection for the pipeline server
 
@@ -49,7 +49,7 @@ image::01-03/OCPAI-DS-Prj-InitialView.png[width=50%]
 * You will need to **Add data connection** that points to it.
 +
 [.bordershadow]
-image::01-03/AddDataConnection.png[width=50%]
+image::01-03/AddDataConnection.png
 
 * Here is the information you need to enter:
 ** Name:
@@ -96,7 +96,7 @@ image::01-03/AddDataConnection2.png[]
 
 It is highly recommended to create your pipeline server before creating a workbench. So let's do that now!
 
-* In your Data Science Project (DSP), click on **Create a pipeline Server**
+* In your Data Science Project (DSP), click on **Configure a pipeline Server**
 +
 [.bordershadow]
 image::01-03/pipelineserver01.png[]
@@ -106,11 +106,15 @@ image::01-03/pipelineserver01.png[]
 [.bordershadow]
 image::01-03/pipelineserver02.png[]
 
-* When your pipeline server is ready, your screen will look like the following:
+* When filling out your configuration, your screen will look like the following:
 +
 [.bordershadow]
 image::01-03/pipelineserver03.png[]
 
+* When your pipeline server is ready, your screen will look like the following:
+
+[.bordershadow]
+image::01-03/pipelineserver04.png[]
 At this point, your pipeline server is ready and deployed.
 
 IMPORTANT: You need to **wait** until that screen is ready. If it's still spinning, wait for it to complete. If you continue and create your workbench **before** the pipeline server is ready, your workbench will not be able to submit pipelines to it.
@@ -124,20 +128,43 @@ IMPORTANT: You need to **wait** until that screen is ready. If it's still spinni
 [.bordershadow]
 image::01-03/create-wb.png[]
 * Make sure it has the following characteristics:
-** Choose a name for it, like: `My Workbench`
-** Image Selection: `CUSTOM - Insurance Claim Processing Lab Workbench`
-** Container Size: `Standard`
-** Accelerator: `None`
+** Name
+[.lines_space]
+[.console-input]
+[source, text]
+[subs=attributes+]
+{user}Workbench
+** Image selection `TensorFlow`
+** Version selection `2023.2 (Recommended)`
+** Container size `Medium`
+** Accelerator `None`
+** Cluster storage --> Create new persistent storage
+** Name
+[.lines_space]
+[.console-input]
+[source, text]
+[subs=attributes+]
+{user}Workbench
++
+NOTE: Don't change the Persistent storage size
++
+** Use a data connection `check the box`
+** Data connection `Minio Data Connection`
 * That should look like:
 +
 [.bordershadow]
 image::01-03/launch-workbench-01.png[]
-* You should not need to modify any other Workbench settings (such as Storage)
+[.bordershadow]
+image::01-03/launch-workbench-02.png[]
+[.bordershadow]
+image::01-03/launch-workbench-03.png[]
++
 * Wait for your workbench to be fully started
+** Status will be `Running`
 * Once it is, click the **Open** Link to connect to it.
 +
 [.bordershadow]
-image::01-03/open-link.png[]
+image::01-03/open-wb-link.png[]
 
 * Authenticate with the same credentials as earlier
 * You will be asked to accept the following settings:
@@ -159,7 +186,7 @@ We will clone the content of our Git repo so that you can access all the materia
 ** Open the Git UI in Jupyter:
 +
 [.bordershadow]
-image::02/git-clone-1.png[]
+image::01-03/git-clone-1.png[width=50%]
 +
 ** Enter the URL of the Git repo:
 +
@@ -167,10 +194,16 @@ image::02/git-clone-1.png[]
 [source,adoc]
 [subs=attributes+]
 ----
-{git-clone-repo-url2}
+{git-clone-repo-url}
 ----
 +
 [.bordershadow]
-image::02/git-clone-2.png[]
+image::01-03/git-clone-2.png[width=75%]
 
 At this point, your project is ready for the work we want to do in it.
+
+You should a view similar to this.
+[.bordershadow]
+image::01-03/initial-git-load-view.png[width=85%]
+
+*Now lets move onto working with the Juypter notebooks and build some models.*

@@ -19,8 +19,7 @@ asciidoc:
     minio-user: minio
     minio-pass: minio123
     minio-endpoint: http://minio-service.{user}-mlops.svc:9000
-    git-clone-repo-url: https://github.com/brunoNetId/redbag-ai.git
-    git-clone-repo-url2: https://github.com/brunoNetId/rhods-transfer-learning.git
+    git-clone-repo-url: https://github.com/dbrugger946/summit2024-edge-ai-appdev.git
     git-clone-repo-branch: main
     user: userX
     password: openshift
