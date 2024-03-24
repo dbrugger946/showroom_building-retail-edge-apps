@@ -78,3 +78,6 @@ You can now go ahead and open the *redbag-push-latest.ipynb* notebook and run it
 
 [.bordershadow]
 image::01-04/copy-to-S3-nb.png[]
+
+
+*Now let's invoke the model from an "Edge" application*

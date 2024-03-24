@@ -2,6 +2,7 @@
 * MLOps
 ** xref:01-02-mlops-environment.adoc[Environment]
 ** xref:01-03-mlops-data-science-prj.adoc[Data Science Project]
-** xref:01-04-mlops-jupyter.adoc[Jupyter Notebooks]
-** xref:01-05-mlops-tekton.adoc[Tekton]
-** xref:01-06-mlops-edge-usage.adoc[Edge Application]
+** xref:01-04-mlops-jupyter.adoc[Build a Model]
+** xref:01-05-mlops-edge-usage.adoc[Edge Application]
+** xref:01-06-mlops-elyra-tekton.adoc[Optional: Model Pipelines]
+* Application Services

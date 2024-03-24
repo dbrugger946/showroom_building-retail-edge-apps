@@ -1,1 +1,0 @@
-= MLOps - Edge Applications and Operationalizing the Model
