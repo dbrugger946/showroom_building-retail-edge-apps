@@ -47,7 +47,7 @@ image::01-02/ocp-login.png[width=75%]
 * After you authenticate, you should be taken into your {user}-mlops project, and the result should look like:
 
 [.bordershadow]
-image::01-02/ocp-initial-userproject2.png[width=75%]
+image::01-02/ocp-initial-userproject.png[width=75%]
 
 === Log into OpenShift AI
 On the upper Right of the OpenShift Console screen click on the grid menu icon and from there click on the Red Hat OpenShift AI menu option
