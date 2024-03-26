@@ -24,7 +24,7 @@ In this section, each of you will
 * If you completed the last section you should be looking at the main view into OpenShift AI Dashboard application
 
 [.bordershadow]
-image::01-03/OCP-AI-MainView.png[width=50%]
+image::01-03/OCP-AI-MainView.png[width=75%]
 
 
 * In the OpenShift AI Dashboard application, navigate to the Data Science Projects menu on the left
@@ -152,10 +152,18 @@ NOTE: Don't change the Persistent storage size
 ** Data connection `Minio Data Connection`
 * That should look like:
 +
+** Top of workbench view
++
 [.bordershadow]
 image::01-03/launch-workbench-01.png[]
+
+** Middle of workbench view
++
 [.bordershadow]
 image::01-03/launch-workbench-02.png[]
++
+** Bottom of workbench view
++
 [.bordershadow]
 image::01-03/launch-workbench-03.png[]
 +
@@ -168,11 +176,12 @@ image::01-03/open-wb-link.png[]
 
 * Authenticate with the same credentials as earlier
 * You will be asked to accept the following settings:
+** Click *Allow selected permissions*
 +
 [.bordershadow]
 image::01-03/accept.png[]
 
-* Do so
+
 * You should now see this:
 +
 [.bordershadow]

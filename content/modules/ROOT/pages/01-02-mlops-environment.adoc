@@ -11,9 +11,7 @@ Each user will perform the following tasks:
 * Complete the configuration and setup of the Data Science Project
 * Create and Open the AI Workbench
 * Load and review the Jupyter notebooks for image detection model creation
-* Design an Elyra pipeline
-* Create an OpenShift Pipeline
-* Run the AI/ML OpenShift Pipeline
+* Run the Jupyter notebooks to create, test, and deploy a new model
 * Operationalize the created/deployed model by calling it from the Edge based shopping application
 
 From a high-level view each user will have all their required services available in their own unique OpenShift project. This is to support the limitations inherent in a lab environment.  
@@ -64,12 +62,12 @@ image::01-02/OCP-AI-Menu-option.png[width=50%]
 image::01-02/LoginSplashScreen.png[width=50%]
 
 [.bordershadow]
-image::01-02/OCP-AI-Login.png[width=50%]
+image::01-02/OCP-AI-Login.png[width=60%]
 
 * If your login is successful then you should be viewing the main OpenShift AI Console
 
 [.bordershadow]
-image::01-02/OCP-AI-MainView.png[width=50%]
+image::01-02/OCP-AI-MainView.png[width=75%]
 
 Now we will fill out the Data Science Project what was created for each user.
 
