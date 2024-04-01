@@ -19,8 +19,10 @@ asciidoc:
     minio-user: minio
     minio-pass: minio123
     minio-endpoint: http://minio-service.{user}-mlops.svc:9000
-    git-clone-repo-url: https://github.com/dbrugger946/summit2024-edge-ai-appdev.git
+    git-clone-repo-url: https://github.com/dbrugger946/summit2024-lab2-edge-ai-lab2-edge.git
     git-clone-repo-branch: main
+    git-clone-repo-lab2-url: https://github.com/brunoNetId/sp-edge-to-cloud-data-pipelines-demo.git
+    git-clone-repo-lab2-branch: main
     user: userX
     password: openshift
     openshift_cluster_ingress_domain: cluster-p6g59.sandbox2568.opentlc.com

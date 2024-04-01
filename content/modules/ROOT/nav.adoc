@@ -1,8 +1,10 @@
 * xref:01-01-introduction.adoc[Introduction]
 * MLOps
-** xref:01-02-mlops-environment.adoc[Environment]
+** xref:01-02-mlops-overview-environment.adoc[Overview & Environment]
 ** xref:01-03-mlops-data-science-prj.adoc[Data Science Project]
 ** xref:01-04-mlops-jupyter.adoc[Build a Model]
 ** xref:01-05-mlops-edge-usage.adoc[Edge Application]
-Pipelines]
-* Application Services
+* Application Development
+** xref:02-01-appdev-overview-environment.adoc[Overview & Environment]
+** xref:02-02-appdev-edge-camel-price.adoc[Pricing Engine]
+** xref:02-03-appdev-edge-shopper.adoc[Shopping Application]

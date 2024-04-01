@@ -27,7 +27,7 @@ image::01-04/initial-git-load-view.png[]
 == Load the  *redbag-base.ipynb* Notebook and Run a Model
 In your workbench:
 
-. In the left hand navigation menu, navigate to the folder called: `summit2024/repos/summit2024-edge-ai-appdev/workbench/direct-approach`
+. In the left hand navigation menu, navigate to the folder called: `summit2024/repos/summit2024-lab2-edge-ai-lab2-edge/workbench/direct-approach`
 
 . Open the notebook called `redbag-base.ipynb`
 +
