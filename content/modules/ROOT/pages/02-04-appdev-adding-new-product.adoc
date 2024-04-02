@@ -1,0 +1,69 @@
+= Adding a New Product
+
+
+== Overview
+In this section you be adding a new product.  From our use case, the store or kiosk is being asked about other tea varieties by customers, or a new tea vendor has a new niche offering in high demand and the store/chain wants to quickly add it to certain locations.
+
+The vendor sends some marketing material, including lots of images of the new product, Bali Tea (Green Tea) to be used in store marketing or placement info on the store website.  The store takes additional pictures of the new product and uploads them to the centralized data services pipeline which sends them through the OpenShift AI platform where they are fed into a transfer learning process and a new model focused on that product is added to the remote store/kiosks model set.  The store also updates the pricing engine to add pricing for that new product.
+
+These changes occur through the reusable pipeline setup and available on the centralized data science OpenShift AI cluster.  In our lab environment those services are located on your {user}-lab2-ds project.
+
+NOTE: For purposes of the lab the lab instructors will demonstrate the full end to end capabilities of this approach.  The lab itself will focus on building and directly invoking the data pipeline and model building process, and each of you will then update your pricing engines for the new deployed product.
+
+In this section, each of you will:
+
+. Review some example images available of the new Bali Tea.
+. Review model training notebooks and an Elyra pipeline in Jupyter, running in your OpenShift AI workbench.
+. Create an OpenShift Tekton Pipeline from the Elyra pipeline
+. Deploy a Tekton pipeline trigger and webhook
+. Directly invoke the data pipeline model training process through the webhook.
+. Update the pricing engine in your {user}-lab2-edge project.
+. Test the shopping application to see if it recognizes the new product.
+
+NOTE:  Although the processing/training of models may seem to take some time, we are only using a small sample set of images for this lab to simplify setup and reduce waiting time for lab participants. In a real-world scenario you would be loading a lot more images for training and the overall prediction accuracy would increase.
+
+*
+
+[.bordershadow]
+image::02-04/2-setup/01-ocpai-menu.png[width=75%]
+
+*
+
+[.bordershadow]
+image::02-04/2-setup/01.1-ocp-ai-splash.png[width=75%]
+
+*
+
+[.bordershadow]
+image::02-04/2-setup/02-ocp-ai-login.png[width=75%]
+
+*
+
+[.bordershadow]
+image::02-04/2-setup/03-ocp-ai-init-page.png[width=75%]
+
+*
+
+[.bordershadow]
+image::02-04/2-setup/04-ocpai-dsp.png[width=75%]
+
+*
+
+[.bordershadow]
+image::02-04/2-setup/05-wb-login.png[width=75%]
+
+*
+
+[.bordershadow]
+image::02-04/2-setup/06-allow-permissions.png[width=75%]
+
+
+
+
+http://minio-service.user1-lab2-edge.svc:9000
+
+
+curl -v \
+-H 'content-Type: application/json' \
+-d '{"id-edge":"user1-lab2-edge"}' \
+http://el-train-model-listener.user1-lab2-ds.svc:8080
