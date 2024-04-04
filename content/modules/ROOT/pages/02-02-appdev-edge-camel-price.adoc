@@ -50,7 +50,7 @@ Before we can review the current CamelK pricing engine you need to clone the con
 [.console-input]
 [source,adoc]
 [subs=attributes+]
-{git-clone-repo-lab2-url}
+{git-clone-repo-url}
 
 [.bordershadow]
 image::02-02/devspaces-load-gitrepo.png[width=75%]

@@ -74,7 +74,7 @@ Minio Data Connection
 [.console-input]
 [source, text]
 [subs=attributes+]
-http://minio-service.{user}-mlops.svc:9000
+{minio-endpoint}
 ** Region:
 [.lines_space]
 [.console-input]
