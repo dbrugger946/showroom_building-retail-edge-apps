@@ -2,7 +2,7 @@
 
 
 == Overview
-=== User Case
+=== Use Case
 In this section you be adding a new product.  From our use case, the store or kiosk is being asked about other tea varieties by customers, or a new tea vendor has a new niche offering in high demand and the store/chain wants to quickly add it to certain locations.
 
 The vendor sends some marketing material, including lots of images of the new product, *Bali Tea (Green Tea)*, to be used in store marketing or for placement information on the store website.  The store takes additional pictures of the new product and the shopper app uploads all the images to an S3 data source on the near edge.  
@@ -99,10 +99,11 @@ NOTE: This review covers the main services and actions involved.  A more indepth
 
 . When the Tekton pipeline uploads the new model to the S3 bucket, the Edge Manager notices the artifacts and initiates the download of the model and hot deploys it in the TensorFlow model server
 
+. The AI/ML engine, powered by the TensorFlow Model Server, reacts to the new version (v2), now available in its local S3 bucket, and initiates a hot-deployment. It loads the new version and discards the old one that was held in memory. This process happens without service interruption. Clients sending inference requests inadvertently start obtaining results computed with the new hot-deployed version (v2).
 
 NOTE: There is a follow-on lab exercise where you can work through the creation of an AI/ML pipeline implemented as an OpenShift Pipeline to get a deeper understanding of that critical part of a data pipeline.
 
-The AI/ML engine, powered by the TensorFlow Model Server, reacts to the new version (v2), now available in its local S3 bucket, and initiates a hot-deployment. It loads the new version and discards the old one that was held in memory. This process happens without service interruption. Clients sending inference requests inadvertently start obtaining results computed with the new hot-deployed version (v2).
+
 
 
 
