@@ -29,17 +29,39 @@ include::partial$ocp-re-open-console.adoc[]
 
 * View some of the images for the new tea: *bali-tea* *"green tea"*
 
+[.bordershadow]
+image::02-04/green-tea-s3-data.jpeg[width=75%]
+
 NOTE: These images were collected by attendees at a recent live demonstration of the larger end to end demo
 
 * You should be in the Developer Topology view in the OpenShift console and moving around the layout you should be familiar with many of the services and their role in the store edge application set.
 
+[.bordershadow]
+image::02-04/01-edge-prj-main-pieces.png[width=75%]
+
 TIP: A quick reminder: The existing model v1 you have been using with the shopping application does not know about this new type of tea, it only knows about Earl Grey Tea and Lemon Tea.
 
 * Use the _admin_ and _monitor_ web pages in the *shopping* app to initiate and follow the data pipeline flow from the near edge S3 storage, through the model retraining pipeline, and movement of the new AI/ML inference model out the edge to be picked up by the Model Server __tf-server__
-** Open the Shopping Application "Admin" Page https://camel-edge-{user}-lab2-edge.apps.{openshift_cluster_ingress_domain}/[https://camel-edge-{user}-lab2-edge.apps.{openshift_cluster_ingress_domain}/]
+** Open the Shopping Application "Admin" Page
+** https://camel-edge-{user}-lab2-edge.apps.{openshift_cluster_ingress_domain}/[https://camel-edge-{user}-lab2-edge.apps.{openshift_cluster_ingress_domain}/]
+
+[.bordershadow]
+image::02-04/admin-screen-view.png[width=75%]
+
 ** Click on the *Train* Button to initiate the pipeline flow.
+
+[.bordershadow]
+image::02-04/admin-screen-view2.png[width=75%]
+
 ** The GUI will show the progress of the image movement and model training
+
+[.bordershadow]
+image::02-04/monitor-view.png[width=75%]
+
 ** The entire execution of the pipeline may take between 2-5 minutes.
+
+[.bordershadow]
+image::02-04/monitor-view2.png[width=75%]
 
 * After the whole process completes, the new version of the model, trained to recognize the new tea type -- green-tea -- is pushed out to the store's "near" edge into the production bucket of the S3 storage, minio.
 
@@ -69,7 +91,7 @@ image::02-03/12-Pick-from-Device.png[width=75%]
 image::02-03/13-choose-tea-earl-grey.png[width=75%]
 
 * The Shopping service will call the Model Server *tf-server* and get the response that the tea is identified as green tea.
-* The Shopping service will next call the Price Engine *price-engine* and return the current price.  The Pricing Engine was reviewed in xref:02-02-appdev-edge-camel-price.adoc[Pricing Engine Section]
+* The Shopping service will next call the Price Engine *price-engine* and return the current price.
 
 
 === Detailed Review of what is occuring in the flow
