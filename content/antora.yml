@@ -18,12 +18,11 @@ asciidoc:
     ssh_command: ssh devops@bastion.{guid}.example.opentlc.com
     minio-user: minio
     minio-pass: minio123
-    minio-endpoint: http://minio-service.{user}-lab1-apps.svc:9000
     git-clone-repo-url: https://github.com/RedHat-Middleware-Workshops/edge-to-cloud-pipelines-workshop.git
     git-clone-repo-branch: main
     user: userX
     password: openshift
-    openshift_cluster_ingress_domain: cluster-6qhg8.sandbox1440.opentlc.com
+    openshift_cluster_ingress_domain: cluster-qf8ht.sandbox340.opentlc.com
     openshift_console_url: https://console-openshift-console.apps.{openshift_cluster_ingress_domain}/
     rhoai_dashboard_url: https://rhods-dashboard-redhat-ods-applications.{openshift_cluster_ingress_domain}/
     login_command: oc login --insecure-skip-tls-verify=false -u userX -p openshift https://api.{openshift_cluster_ingress_domain}:6443"    

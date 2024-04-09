@@ -11,7 +11,9 @@ In this section you will:
 
 NOTE: In the next section we will cover the *shopper* service which provides the shoppers GUI experience and invokes the above services and their dependencies.
 
-You should be logged into the OpenShift Console, if you timed out or logged out, follow these instructions.  xref:../partials/ocp-re-open-console.adoc[Log Back into OpenShift]
+You should be logged into the OpenShift Console, if you timed out or logged out, follow these instructions.  
+
+xref:includes/ocp-re-open-console.adoc[Log Back into OpenShift]
 
 == Operationalizing Models onto The Edge
 This section and the next section focus on services running in the Edge environment, and how they interact with deployed AI/ML models.
