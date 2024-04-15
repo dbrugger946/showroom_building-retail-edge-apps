@@ -36,6 +36,10 @@ The tensorflow approach also allows for using models that are setup to work with
 
 === Steps
 
+First Ensure that you have downloaded the test images to your lab laptop. You should have done this in Lab 1, if you did not you can download them now.
+
+include::partial$ocp-open-cmd-line-terminal.adoc[]
+
 The following steps allow you to directly call the Model Server running in your {user}-lab2-edge project.  You will invoke it directly using a REST call thrugh the cURL utility.
 
 * Start in Developer view of your {user}-lab2-appdev project
